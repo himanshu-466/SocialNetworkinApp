@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.profileActivity"
+    android:orientation="vertical"
+    android:background="@drawable/loginbackground">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userimage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/placeholder"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-40dp"
+            android:clickable="true"
+            app:backgroundTint="@color/floating"
+            app:srcCompat="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/profiletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Update your profile information"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:layout_marginTop="-30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/profilename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="10dp"
+                android:hint="NAME"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColorHint="#606060"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/profilefullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="10dp"
+                android:hint="FULL NAME"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textColorHint="#606060"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/profilecountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:drawableLeft="@drawable/country"
+                android:drawablePadding="10dp"
+                android:hint="COUNTRY"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:padding="20dp"
+                android:textColorHint="#606060"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/profilecheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Agree to Out Terms and Conditions" />
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/profiledone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/button_background"
+                    app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+                <ProgressBar
+                    android:id="@+id/profileprogressbar"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

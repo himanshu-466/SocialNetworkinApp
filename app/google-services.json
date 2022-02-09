@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1657749647",
+    "project_id": "socialnetworkinapp",
+    "storage_bucket": "socialnetworkinapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1657749647:android:dc6874ec006dbc5a8070fa",
+        "android_client_info": {
+          "package_name": "com.mohit.socialnetworkinapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1657749647-7v758asn1f4r7n7ih46m1dbgo0g54tkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_CHagC9knEvHENrMcDlkB0pn70zGwp8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1657749647-7v758asn1f4r7n7ih46m1dbgo0g54tkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

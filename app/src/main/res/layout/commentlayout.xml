@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/commentuserimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/placeholder"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/commentusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/commentuserimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/commentuserdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textColor="#0C0C0C"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/commentusername"
+        app:layout_constraintStart_toEndOf="@+id/commentusername"
+        app:layout_constraintTop_toTopOf="@+id/commentusername" />
+
+    <TextView
+        android:id="@+id/commentusertime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textColor="#0C0C0C"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/commentuserdate"
+        app:layout_constraintStart_toEndOf="@+id/commentuserdate"
+        app:layout_constraintTop_toTopOf="@+id/commentuserdate" />
+
+    <TextView
+        android:id="@+id/commentdiscription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textMultiLine"
+        android:text="snd"
+        android:textColor="#040303"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/commentusername"
+        app:layout_constraintTop_toBottomOf="@+id/commentusertime" />
+
+    <ImageView
+        android:id="@+id/commentmoreoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/commentdiscription"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="#BAB5B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentmoreoption" />
+</androidx.constraintlayout.widget.ConstraintLayout>

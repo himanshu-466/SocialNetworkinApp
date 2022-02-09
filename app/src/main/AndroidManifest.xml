@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mohit.socialnetworkinapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SocialNetworkinApp">
+        <activity
+            android:name=".Activities.ImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.MessagesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.chatdetailedActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activities.commentActivity" />
+        <activity android:name=".Activities.OtherUserProfile" />
+        <activity
+            android:name=".Activities.About"
+            android:theme="@style/Theme.MyTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activities.Myprofile" />
+        <activity android:name=".Activities.Mypost" />
+        <activity
+            android:name=".Activities.profileActivity"
+            android:theme="@style/Theme.MyTheme" />
+        <activity
+            android:name=".Activities.loginActivity"
+            android:theme="@style/Theme.MyTheme" />
+        <activity
+            android:name=".Activities.register"
+            android:theme="@style/Theme.MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenReaderFocusable="true"
+            android:theme="@style/Theme.MyTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name=".Classes.FirebaseMessagingService"
+            android:exported="false"
+            android:permission="TODO"
+            tools:ignore="ExportedService,IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
