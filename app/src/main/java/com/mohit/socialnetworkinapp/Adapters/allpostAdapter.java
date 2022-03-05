@@ -57,7 +57,7 @@ public class allpostAdapter extends RecyclerView.Adapter<allpostAdapter.viewhold
     FirebaseDatabase database;
     FirebaseStorage storage;
     FirebaseUser user;
-        boolean likechecker=false;
+    boolean likechecker=false;
     Dialog dialog;
     EditText editcomment;
     Button cancel,update;
